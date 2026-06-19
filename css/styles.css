@@ -309,7 +309,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    
 }
 
 .game-header h2 {
@@ -404,9 +404,9 @@ button {
     position: absolute;
     width: 200px;
     height: 270px;
-    background: linear-gradient(135deg, #f5f1e8 0%, #e8e3d8 100%);
+    background: linear-gradient(135deg, #ae0000 0%, #780303 100%);
     border-radius: 16px;
-    border: 3px solid rgba(0, 0, 0, 0.15);
+    border: 3px solid rgba(255, 255, 255, 0.525);
     box-shadow: var(--shadow-card);
 }
 
@@ -430,11 +430,10 @@ button {
     position: absolute;
     width: 200px;
     height: 270px;
-    right: 50px;
-    bottom: 50px;
-    opacity: 0;
-    transform: translateY(50px) scale(0.5) rotateY(180deg);
+margin-bottom: 15px;
     transition: all var(--transition-normal);
+    rotateY(180deg);
+    rotateX(5deg);
     pointer-events: none;
     z-index: 20;
 }
@@ -612,7 +611,8 @@ button {
     border: 1px solid rgba(31, 140, 62, 0.4);
     border-radius: 12px;
     padding: 20px;
-    margin-bottom: 20px;
+    
+    margin-bottom: 0px;
     backdrop-filter: blur(5px);
     animation: slideUp 0.5s ease-out;
     box-shadow: var(--shadow-soft);
@@ -632,7 +632,7 @@ button {
 .rule-content {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 6px;
     text-align: center;
 }
 
@@ -651,7 +651,7 @@ button {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .rule-type {
