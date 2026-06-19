@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuarto Rey - Un mazo, muchas reglas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- PANTALLA DE INICIO -->
+    <section id="screen-start" class="screen active">
+        <div class="container-start">
+            <h1 class="title-huge">CUARTO REY</h1>
+            <p class="subtitle-start">Toca para empezar</p>
+        </div>
+    </section>
+
+    <!-- PANTALLA DE JUEGO -->
+    <section id="screen-game" class="screen">
+        <div class="game-header">
+            <h2>Cuarto Rey</h2>
+            <div class="card-counter">
+                <span id="cards-left">52</span> cartas
+            </div>
+        </div>
+
+        <!-- Escena isométrica -->
+        <div class="game-scene">
+            <!-- Decoraciones del fondo -->
+            <div class="scene-decorations">
+                <div class="decoration star star-1"></div>
+                <div class="decoration star star-2"></div>
+                <div class="decoration dice dice-1"></div>
+                <div class="decoration crown"></div>
+                <div class="decoration light light-1"></div>
+                <div class="decoration light light-2"></div>
+            </div>
+
+            <!-- Mesa/plataforma -->
+            <div class="platform">
+                <!-- Mazo de cartas -->
+                <div id="card-deck" class="card-deck">
+                    <div class="deck-inner">
+                        <div class="deck-card"></div>
+                        <div class="deck-card"></div>
+                        <div class="deck-card"></div>
+                    </div>
+                </div>
+
+                <!-- Carta revelada -->
+                <div id="revealed-card" class="revealed-card">
+                    <div class="card-front">
+                        <div class="card-value"></div>
+                        <div class="card-suit"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta de regla -->
+        <div id="rule-card" class="rule-card">
+            <div class="rule-content">
+                <h3 id="rule-title">Toca el mazo</h3>
+                <p id="rule-description">Toca el mazo para revelar una carta</p>
+                <div class="rule-meta">
+                    <span id="rule-type" class="rule-type">Acción</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Últimas cartas -->
+        <div class="last-cards">
+            <div id="last-cards-list" class="last-cards-list"></div>
+        </div>
+
+        <!-- Botones de control -->
+        <div class="game-buttons">
+            <button id="btn-next-card" class="btn btn-primary" disabled>Siguiente carta</button>
+            <button id="btn-rules-game" class="btn btn-secondary">Reglas</button>
+            <button id="btn-restart" class="btn btn-danger">Reiniciar</button>
+        </div>
+    </section>
+
+    <!-- PANTALLA DE REGLAS -->
+    <section id="screen-rules" class="screen">
+        <div class="rules-header">
+            <h2>Todas las Reglas</h2>
+            <button id="btn-back-from-rules" class="btn btn-close">✕</button>
+        </div>
+
+        <div class="rules-content">
+            <div id="rules-list" class="rules-list"></div>
+        </div>
+    </section>
+
+    <!-- PANTALLA FINAL -->
+    <section id="screen-end" class="screen">
+        <div class="container-end">
+            <div class="end-content">
+                <h2 class="end-title">Se acabó el mazo</h2>
+                <p class="end-subtitle">El Cuarto Rey ha hablado.</p>
+                
+                <div class="end-decoration">
+                    <div class="crown-big"></div>
+                </div>
+
+                <p id="end-message" class="end-message"></p>
+
+                <button id="btn-play-again" class="btn btn-primary">Jugar otra vez</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
