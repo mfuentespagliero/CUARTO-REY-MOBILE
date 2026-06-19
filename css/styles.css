@@ -337,7 +337,7 @@ button {
     justify-content: center;
     position: relative;
     width: 100%;
-    max-width: 380px;
+    max-width: 350px;
     aspect-ratio: 1;
     margin-top: 20px;
 }
